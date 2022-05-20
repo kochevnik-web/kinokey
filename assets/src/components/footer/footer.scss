@@ -1,0 +1,52 @@
+.footer {
+  background-color: var(--black);
+  color: var(--lightgrey);
+  padding: 55px 0;
+  font-size: 14px;
+  line-height: 17px;
+
+  @include media-breakpoint-down(sm) {
+    padding: 15px 0;
+  }
+
+  a:not(.footer-logo){
+    color: var(--lightgrey);
+    font-weight: 700;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  &-menu {
+    li {
+      margin: 0 0 10px 0;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+
+  &-social {
+    li {
+      margin: 0 35px 0 0;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+
+  &-copy {
+    @include media-breakpoint-down(sm) {
+      margin: 15px 0 0 0;
+    }
+  }
+
+  &-mail {
+    @include media-breakpoint-down(md) {
+      margin: 20px 0 0 0;
+    }
+  }
+}
