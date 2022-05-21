@@ -27,6 +27,8 @@ jQuery(document).ready(function( $ ) {
         }
     }
 
+    changeAspectRatio()
+
     $(window).resize(function(){
         changeAspectRatio()
     })

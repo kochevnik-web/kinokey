@@ -25,6 +25,12 @@ body {
     }
 }
 
+h3 {
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
 .radius-bottom-right {
     border-bottom-right-radius: 80px;
 }
@@ -59,7 +65,7 @@ body {
     }
 }
 
-.labale-inprogramm {
+.label-inprogramm {
     position: relative;
 
     &:after {
@@ -71,6 +77,24 @@ body {
         top: 0;
         color: var(--black);
         background: var(--yelloy);
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 0.5em 1.6em;
+    }
+}
+
+.label-premier {
+    position: relative;
+
+    &:after {
+        content: "Премьера";
+        font-size: 30px;
+        line-height: 1em;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: var(--black);
+        background: var(--yelloygreen);
         font-weight: 700;
         text-transform: uppercase;
         padding: 0.5em 1.6em;
