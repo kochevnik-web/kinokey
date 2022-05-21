@@ -5,7 +5,10 @@ body {
     --yelloygreen: #CFFD51;
     --yelloy: #FBE875;
     --red: #C9223A;
+    --purpur: #AC7BD7;
     --grey:#A6A5A2;
+    --green: #9FBF17;
+    --blue: #093076;
     --orange: #EC5B29;
     --bs-gutter-x: 15px;
     --header-gap: 135px;
@@ -26,6 +29,18 @@ body {
     border-bottom-right-radius: 80px;
 }
 
+.bg-purpur {
+    background-color: var(--purpur)!important;
+}
+
+.bg-green {
+    background-color: var(--green)!important;
+}
+
+.bg-blue {
+    background-color: var(--blue)!important;
+}
+
 .label-new {
     position: relative;
 
@@ -38,6 +53,24 @@ body {
         top: 0;
         color: var(--black);
         background: var(--orange);
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 0.5em 1.6em;
+    }
+}
+
+.labale-inprogramm {
+    position: relative;
+
+    &:after {
+        content: "В программе";
+        font-size: 30px;
+        line-height: 1em;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: var(--black);
+        background: var(--yelloy);
         font-weight: 700;
         text-transform: uppercase;
         padding: 0.5em 1.6em;
