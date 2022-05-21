@@ -6,6 +6,7 @@ body {
     --yelloy: #FBE875;
     --red: #C9223A;
     --grey:#A6A5A2;
+    --orange: #EC5B29;
     --bs-gutter-x: 15px;
     --header-gap: 135px;
     --header-gap-mobile: 67px;
@@ -23,4 +24,22 @@ body {
 
 .radius-bottom-right {
     border-bottom-right-radius: 80px;
+}
+
+.label-new {
+    position: relative;
+
+    &:after {
+        content: "Новинка";
+        font-size: 30px;
+        line-height: 1em;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: var(--black);
+        background: var(--orange);
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 0.5em 1.6em;
+    }
 }

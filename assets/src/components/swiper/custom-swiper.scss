@@ -30,7 +30,7 @@
         }
     }
 
-    #slide-1, #slide-2, #slide-3 {
+    #slide-1, #slide-2, #slide-3, #slide-4 {
         .___link {
             position: absolute;
             font-size: 28px;
@@ -194,7 +194,7 @@
         .___title {
             color: var(--black);
             background-color: var(--white);
-            padding: 70px 85px 70px;
+            padding: 95px 85px 60px;
             width: 766px;
             font-size: 60px;
             font-weight: 700;
@@ -214,6 +214,14 @@
                     margin: 30px 0;
                     font-size: 32px;
                     line-height: 40px;
+                }
+            }
+
+            .label-new {
+                &:after {
+                    @include media-breakpoint-down(sm) {
+                        font-size: 24px;
+                    }
                 }
             }
         }
@@ -258,6 +266,106 @@
 
                     @include media-breakpoint-down(sm) {
                         margin: 0 0 30px 0;
+                    }
+                }
+            }
+        }
+    }
+
+    #slide-4 {
+        background: var(--orange);
+
+        .swiper-slide-wrap {
+            min-height: calc(var(--swiper-height) - 140px);
+            top: 70px;
+            background: url('../img/slide-4.png')no-repeat center left;
+            position: relative;
+
+            @include media-breakpoint-down(md) {
+                background: none;
+            }
+        }
+
+        .___text {
+            padding: 0 85px 0 0;
+            width: 55%;
+
+            @include media-breakpoint-down(md) {
+                padding: 0 60px;
+                width: 100%;
+
+                @include media-breakpoint-down(sm) {
+                    padding: 0;
+                }
+            }
+        }
+
+        .___title {
+            color: var(--black);
+            background: var(--grey);
+            padding: 60px 85px;
+            margin: 0 0 25px 0;
+
+            @include media-breakpoint-down(sm) {
+                padding: 40px;
+            }
+
+            p {
+                line-height: 1;
+                margin: 0 0 30px 0;
+                font-weight: 700;
+            }
+
+            h3 {
+                font-size: 84px;
+                line-height: 1;
+                margin: 0 0 30px 0;
+                font-weight: 700;
+
+                @include media-breakpoint-down(lg) {
+                    font-size: 60px;
+                }
+            }
+
+            h6 {
+                font-size: 40px;
+                line-height: 1;
+                margin: 0;
+                font-weight: 700;
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 22px;
+                }
+            }
+        }
+
+        .___time {
+            font-size: 24px;
+            color: var(--white);
+            background: var(--black);
+            padding: 35px;
+            margin: 0 25px 0 0;
+            text-align: center;
+
+            @include media-breakpoint-down(sm) {
+                margin: 0 0 25px 0;
+            }
+        }
+
+        .___more{
+            .___link {
+                position: static;
+                padding: 35px;
+                flex: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                @include media-breakpoint-down(md) {
+                    margin: 0;
+
+                    @include media-breakpoint-down(sm) {
+                        margin: 0
                     }
                 }
             }
