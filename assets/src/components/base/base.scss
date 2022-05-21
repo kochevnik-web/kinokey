@@ -2,6 +2,7 @@ body {
     --black: #000000;
     --white: #ffffff;
     --lightgrey: #FAFAFA;
+    --yelloygreen: #CFFD51;
     --red: #C9223A;
     --bs-gutter-x: 15px;
     --header-gap: 135px;
@@ -9,4 +10,10 @@ body {
 
     font-family: 'Montserrat', sans-serif;
     font-size: 22px;
+    font-weight: 500;
+
+    &.home {
+        background-color: var(--black);
+        color: var(--white);
+    }
 }
