@@ -1,4 +1,5 @@
 import Swiper from 'swiper/bundle';
+import 'youtube-background';
 
 jQuery(document).ready(function( $ ) {
     const mainslider = new Swiper('.home-swiper', {
@@ -14,4 +15,6 @@ jQuery(document).ready(function( $ ) {
             prevEl: '.swiper-button .swiper-button-prev',
         },
     });
+
+    $('[data-vbg]').youtube_background();
 });

@@ -3,7 +3,7 @@
 
     .swiper {
         &-slide {
-            min-height: 740px;
+            min-height: var(--swiper-height);
 
             &-bgimg {
                 background-repeat: no-repeat;
@@ -95,7 +95,49 @@
                 padding: 20px 40px;
             }
         }
+    }
 
+    #slide-2 {
+        .___text {
+            position: absolute;
+            padding: 75px;
+            background: var(--yelloy);
+            color: var(--black);
+            width: 861px;
+            top: calc(var(--swiper-height) / 2);
+            transform: translateY(-50%);
+            left: 100px;
+
+            @include media-breakpoint-down(md) {
+                position: static;
+                width: auto;
+                margin: 60px;
+                transform: translateY(0);
+
+                @include media-breakpoint-down(sm) {
+                    margin: 40px 0;
+                    padding: 60px 60px;
+                }
+            }
+
+            h3 {
+                font-size: 46px;
+                font-weight: 700;
+
+                @include media-breakpoint-down(md) {
+                    font-size: 24px;
+                }
+            }
+
+            p {
+                @include media-breakpoint-down(md) {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    #slide-1, #slide-2 {
         .___link {
             position: absolute;
             font-size: 28px;

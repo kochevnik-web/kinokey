@@ -37,6 +37,7 @@
     "gsap": "^3.7.1",
     "inputmask": "^5.0.6",
     "sass": "^1.52.0",
-    "swiper": "^6.5.7"
+    "swiper": "^6.5.7",
+    "youtube-background": "^1.0.14"
   }
 }

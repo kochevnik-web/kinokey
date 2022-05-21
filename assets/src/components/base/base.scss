@@ -3,10 +3,12 @@ body {
     --white: #ffffff;
     --lightgrey: #FAFAFA;
     --yelloygreen: #CFFD51;
+    --yelloy: #FBE875;
     --red: #C9223A;
     --bs-gutter-x: 15px;
     --header-gap: 135px;
     --header-gap-mobile: 67px;
+    --swiper-height: 740px;
 
     font-family: 'Montserrat', sans-serif;
     font-size: 22px;
@@ -16,4 +18,8 @@ body {
         background-color: var(--black);
         color: var(--white);
     }
+}
+
+.radius-bottom-right {
+    border-bottom-right-radius: 80px;
 }
