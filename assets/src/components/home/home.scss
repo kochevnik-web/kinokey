@@ -191,3 +191,40 @@
   }
 }
 
+.home-banner {
+  min-height: 350px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &-text {
+    p {
+      text-transform: uppercase;
+      font-size: 25px;
+      color: var(--white);
+      line-height: 1;
+      margin: 0 0 10px 0;
+      font-weight: 700;
+      text-align: right;
+    }
+
+    a {
+      color: var(--black);
+      font-size: 20px;
+      line-height: 1;
+      text-decoration: none;
+      padding: 0.6em 2.6em;
+      background: var(--yelloygreen);
+      border: 1px solid var(--yelloygreen);
+      font-weight: 700;
+      margin: 25px 0 0 0;
+      display: inline-block;
+
+      &:hover {
+        color: var(--black);
+        background: #cffd51ad;
+      }
+    }
+  }
+}
+
