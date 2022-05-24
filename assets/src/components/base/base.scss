@@ -33,6 +33,21 @@ h3 {
 
 .radius-bottom-right {
     border-bottom-right-radius: 80px;
+    overflow: hidden;
+
+    @include media-breakpoint-down(md) {
+        border-bottom-left-radius: 40px;
+    }
+}
+
+.radius-bottom-left {
+    border-bottom-left-radius: 80px;
+    overflow: hidden;
+
+    @include media-breakpoint-down(md) {
+        border-bottom-left-radius: 40px;
+    }
+
 }
 
 .bg-purpur {
