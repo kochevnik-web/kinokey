@@ -63,6 +63,27 @@
     color: var(--black);
     font-weight: 700;
     font-size: 20px;
+
+    &:hover {
+      .home-news-item__title {
+        color: var(--black)
+      }
+    }
+  }
+
+  &-list {
+    .home-news-item {
+      color: var(--black);
+      font-weight: 700;
+      font-size: 20px;
+      margin: 0 0 60px;
+
+      &:hover {
+        .home-news-item__title {
+          color: var(--black)
+        }
+      }
+    }
   }
 
   &-more {
