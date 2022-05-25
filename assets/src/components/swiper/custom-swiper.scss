@@ -27,10 +27,14 @@
             &-next {
                 transform: rotate(180deg);
             }
+
+            &-wrap {
+                height: 0;
+            }
         }
     }
 
-    #slide-1, #slide-2, #slide-3, #slide-4 {
+    .slide-type-1, .slide-type-2, .slide-type-3, .slide-type-4 {
         .___link {
             position: absolute;
             font-size: 28px;
@@ -66,7 +70,7 @@
         }
     }
 
-    #slide-1 {
+    .slide-type-1 {
         .___text {
             top: 115px;
             left: 100px;
@@ -133,7 +137,7 @@
         }
     }
 
-    #slide-2 {
+    .slide-type-2 {
         .___text {
             position: absolute;
             padding: 75px;
@@ -173,13 +177,12 @@
         }
     }
 
-    #slide-3 {
+    .slide-type-3 {
         background: var(--grey);
 
         .swiper-slide-wrap {
             min-height: calc(var(--swiper-height) - 140px);
             top: 70px;
-            background: url(../img/slide-3.png)no-repeat center right;
             position: relative;
 
             @include media-breakpoint-down(lg) {
@@ -272,13 +275,12 @@
         }
     }
 
-    #slide-4 {
+    .slide-type-4 {
         background: var(--orange);
 
         .swiper-slide-wrap {
             min-height: calc(var(--swiper-height) - 140px);
             top: 70px;
-            background: url('../img/slide-4.png')no-repeat center left;
             position: relative;
 
             @include media-breakpoint-down(md) {
@@ -286,9 +288,39 @@
             }
         }
 
+        .swiper-slide-video {
+            left: 0;
+            height: 100%;
+            width: 57%;
+            top: 0;
+            z-index: 0;
+            padding: 0 5px;
+
+            @include media-breakpoint-down(md) {
+                width: 100%;
+            }
+
+            &:after {
+                position: absolute;
+                content: "";
+                background-image: url("../img/video-mask.png");
+                background-position: left top;
+                background-repeat: no-repeat;
+                background-size: cover;
+                z-index: 10;
+                width: 100%;
+                height: 101%;
+
+                @include media-breakpoint-down(md) {
+                    background-image: none;
+                }
+            }
+        }
+
         .___text {
             padding: 0 85px 0 0;
             width: 55%;
+            z-index: 1;
 
             @include media-breakpoint-down(md) {
                 padding: 0 60px;
@@ -372,7 +404,7 @@
         }
     }
 
-    #slide-5 {
+    .slide-type-5 {
         background: var(--white);
 
         .swiper-slide-wrap {
