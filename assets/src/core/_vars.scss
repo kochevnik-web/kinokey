@@ -12,3 +12,11 @@ $container-max-widths: (
         lg: 1740px,
         xl: 1740px
 );
+
+$tooltip-font-size:                 22px;
+$tooltip-max-width:                 950px;
+$tooltip-color:                     $black;
+$tooltip-bg:                        $white;
+$tooltip-border-radius:             0;
+$tooltip-opacity:                   1;
+$tooltip-arrow-color:               transparent;

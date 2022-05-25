@@ -36,7 +36,7 @@ h3 {
     overflow: hidden;
 
     @include media-breakpoint-down(md) {
-        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
     }
 }
 
@@ -110,6 +110,24 @@ h3 {
         top: 0;
         color: var(--black);
         background: var(--yelloygreen);
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 0.5em 1.6em;
+    }
+}
+
+.label-new-session {
+    position: relative;
+
+    &:after {
+        content: "Новый сезон";
+        font-size: 30px;
+        line-height: 1em;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: var(--black);
+        background: var(--purpur);
         font-weight: 700;
         text-transform: uppercase;
         padding: 0.5em 1.6em;

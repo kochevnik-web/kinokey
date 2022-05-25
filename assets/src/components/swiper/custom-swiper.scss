@@ -467,3 +467,80 @@
         }
     }
 }
+
+.programm-swiper {
+    overflow: hidden;
+
+    &-container {
+        padding: 0 100px;
+        overflow: hidden;
+        margin: 0 0 45px 0;
+
+        @include media-breakpoint-down(lg) {
+            padding: 0 40px;
+        }
+    }
+
+    .swiper-slide {
+        &__tab {
+            text-align: center;
+            padding: 10px;
+            line-height: 1;
+            cursor: pointer;
+
+            @include media-breakpoint-down(sm) {
+                padding: 4px;
+            }
+
+            .___time {
+                text-transform: uppercase;
+                font-size: 18px;
+                font-weight: bold;
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 14px;
+                }
+            }
+
+            .___day {
+                color: #979797;
+                font-size: 14px;
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 8px;
+                }
+            }
+
+            &:hover, &.active {
+                background-color: var(--black);
+
+                .___time, .___day {
+                    color: var(--white);
+                }
+            }
+
+        }
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: var(--white);
+        border: 1px solid var(--black);
+        width: 33px;
+        height: 33px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .swiper-button-prev {
+        left: 0;
+    }
+
+    .swiper-button-next {
+        right: 0;
+        transform: translateY(-50%) rotate(180deg);
+    }
+}
