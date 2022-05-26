@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&display=swap" rel="stylesheet">
     <title>Телеканал КЛЮЧ</title>
 </head>
-<body class="author-list">
+<body class="about">
     <header class="header d-flex align-items-center position-relative">
         <div class="container">
             <div class="d-flex align-items-center justify-content-center justify-content-sm-between">
@@ -38,13 +38,13 @@
                                 <a href="programm.html" class="text-decoration-none">ТЕЛЕПРОГРАММА</a>
                             </li>
                             <li>
-                                <a href="author-list.html" class="text-decoration-none active">ВЕДУЩИЕ</a>
+                                <a href="author-list.html" class="text-decoration-none">ВЕДУЩИЕ</a>
                             </li>
                             <li>
                                 <a href="" class="text-decoration-none">ГДЕ СМОТРЕТЬ</a>
                             </li>
                             <li>
-                                <a href="about.html" class="text-decoration-none">О НАС</a>
+                                <a href="about.html" class="text-decoration-none active">О НАС</a>
                             </li>
                         </ul>
                     </nav>
@@ -58,47 +58,55 @@
         </div>
     </header><!-- /.header -->
 
-    <section class="home-news">
+    <section class="about-menu">
         <div class="container">
-            <div class="home-news-title d-flex align-items-center justify-content-between">
-                <h3>Ведущие</h3>
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <a href="author.html" class="home-news-item">
-                        <img src="assets/public/img/author.png" alt="" class="radius-bottom-left">
-                        <div class="home-news-item__title text-uppercase">
-                            Ника Вайпер
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-6">
-                    <a href="author.html" class="home-news-item">
-                        <img src="assets/public/img/author2.png" alt="">
-                        <div class="home-news-item__title text-uppercase">
-                            Денис Косяков
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-6">
-                    <a href="author.html" class="home-news-item">
-                        <img src="assets/public/img/author3.png" alt="" class="radius-bottom-left">
-                        <div class="home-news-item__title text-uppercase">
-                            Вера полозкова
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-6">
-                    <a href="author.html" class="home-news-item">
-                        <img src="assets/public/img/author4.png" alt="">
-                        <div class="home-news-item__title text-uppercase">
-                            Вера полозкова
-                        </div>
-                    </a>
-                </div>
+            <div class="about-menu-wrap">
+                <ul class="d-flex list-unstyled align-items-center text-uppercase">
+                    <li><a href="#about" class="active">о нас</a></li>
+                    <li><a href="#operators">Операторам</a></li>
+                    <li><a href="#sponsors">Рекламодателям</a></li>
+                </ul>
             </div>
         </div>
-    </section><!-- /.home-news -->
+    </section><!-- /.about-menu -->
+
+    <section id="about">
+        <div class="container">
+            <p class="text-uppercase">Ключ – развлекательно-познавательный телеканал, осуществляющий круглосуточное вещание на территории России в формате HD и SD с 12 апреля 2019 года.</p>
+            <img src="assets/public/img/about.png" class="img-fluid">
+            <div class="about-title">
+                Ключ – это телеканал о саморазвитии.
+            </div>
+            <div class="about-title">
+                Ключ мотивирует, помогает лучше ориентироваться в динамично меняющемся мире.
+            </div>
+        </div>
+    </section>
+
+    <section id="operators" class="about-elem">
+        <div class="container">
+            <div class="about-title">Операторам</div>
+            <small>По вопросам дистрибуции телеканала:</small>
+            <div>
+                <a href="mailto:sales@kluch.tv">sales@kluch.tv</a>
+                <a href="tel:+74952808140">+7 495 280 81 40</a>
+            </div>
+            <div class="about-list d-flex">
+                <a href="">МЕДИАКИТ</a>
+                <a href="">СВИДЕТЕЛЬСТВО</a>
+                <a href="">ЛИЦЕНЗИЯ</a>
+                <a href="">ПРОФИЛАКТИКА</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sponsors" class="about-elem">
+        <div class="container">
+            <div class="about-title">Рекламодателям</div>
+            <small>По вопросам рекламы:</small>
+            <a href="mailto:reklama@kluch.tv">reklama@kluch.tv</a>
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="container">
@@ -175,10 +183,10 @@
         </div>
     </footer><!-- /.footer -->
 
-    <script
-            src="https://code.jquery.com/jquery-3.6.0.min.js"
-            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-            crossorigin="anonymous"></script>
-    <script src="assets/public/js/script.js"></script>
+<script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+<script src="assets/public/js/script.js"></script>
 </body>
 </html>
