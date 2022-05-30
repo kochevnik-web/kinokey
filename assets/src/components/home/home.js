@@ -5,6 +5,9 @@ import window from "inputmask/lib/global/window";
 jQuery(document).ready(function( $ ) {
     const mainslider = new Swiper('.home-swiper', {
         loop: true,
+        autoplay: {
+            delay: 5000,
+        },
 
         pagination: {
             el: ".swiper-pagination",

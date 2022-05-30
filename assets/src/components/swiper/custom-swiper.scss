@@ -1,9 +1,16 @@
 .home-swiper {
     overflow: hidden;
 
+    &.swiper-height {
+        .swiper {
+            &-slide {
+                min-height: var(--swiper-height);
+            }
+        }
+    }
+
     .swiper {
         &-slide {
-            min-height: var(--swiper-height);
 
             &-bgimg {
                 background-repeat: no-repeat;
