@@ -38,6 +38,13 @@
             &-wrap {
                 height: 0;
             }
+
+            svg {
+                @include media-breakpoint-down(sm) {
+                    width: 20px;
+                    height: auto;
+                }
+            }
         }
     }
 
