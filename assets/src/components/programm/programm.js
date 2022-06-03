@@ -40,4 +40,11 @@ jQuery(document).ready(function( $ ) {
         }
     })
 
+    $('.swiper-slide__tab').on('click', function(){
+        $('.swiper-slide__tab').removeClass('active')
+        $('.programm-list').removeClass('_show').hide()
+        $('#' + $(this).data('id')).fadeIn(400)
+        $(this).addClass('active')
+    })
+
 });

@@ -26,8 +26,10 @@
             z-index: 1;
 
             [type="button"] {
-                &:hover {
+                &:hover, &:active {
                     opacity: 0.8;
+                    outline: none;
+                    border: none;
                 }
             }
 
