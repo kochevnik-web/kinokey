@@ -34,6 +34,7 @@ jQuery(document).ready(function( $ ) {
         selector: '[data-toggle="tooltip"]',
         html: true,
         trigger: 'click hover',
+        placement: 'bottom',
         delay: {
             show: 50,
             hide: 400
