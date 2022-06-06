@@ -13,6 +13,7 @@
 
   &-baner {
     background: #ccc;
+    min-height: 100vh;
 
     @include media-breakpoint-down(sm) {
       background: var(--white);
