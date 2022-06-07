@@ -48,4 +48,20 @@ jQuery(document).ready(function( $ ) {
         $(this).addClass('active')
     })
 
+    function onlineProgress () {
+        const item = $('.programm-list-item.online');
+        const date = new Date().getTime()
+        const start = item.data('start') * 1000
+        const end = item.data('end') * 1000
+        if(start < date < end){
+            item.find('.programm-list-item__line').css({width: ((date - start) / ((end - start) / 100)) + '%'})
+        }
+    }
+
+    setInterval(() => {
+        onlineProgress()
+    }, 3000)
+
+    onlineProgress()
+
 });
