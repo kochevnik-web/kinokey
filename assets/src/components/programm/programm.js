@@ -53,7 +53,7 @@ jQuery(document).ready(function( $ ) {
         const date = new Date().getTime()
         const start = item.data('start') * 1000
         const end = item.data('end') * 1000
-        if(start < date < end){
+        if(start < date && date < end){
             item.find('.programm-list-item__line').css({width: ((date - start) / ((end - start) / 100)) + '%'})
         }
     }
