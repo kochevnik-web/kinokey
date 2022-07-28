@@ -33,7 +33,7 @@ jQuery(document).ready(function( $ ) {
     $('body').tooltip({
         selector: '[data-toggle="tooltip"]',
         html: true,
-        trigger: 'click hover',
+        trigger: 'hover',
         placement: 'bottom',
         delay: {
             show: 50,
